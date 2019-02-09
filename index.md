@@ -1,3 +1,3 @@
 # Testing 
 ## mySQL Project
-http://github.com/jonytipton/final.java
+http://github.io/jonytipton/final.java
