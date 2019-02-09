@@ -1,6 +1,6 @@
 # Testing 
 ## mySQL Project
-[FINAL.java](http://jonytipton.github.io/final.java)
+
 '''java
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,10 +9,10 @@ import java.sql.Statement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-// donâ€™t forget to set up your classpath.
+// don't forget to set up your classpath.
 //export CLASSPATH=/opt/mysql/mysql-connector-java-5.1.45-bin.jar:$CLASSPATH
 
-// donâ€™t forget that you need Procedures in your database
+// don't forget that you need Procedures in your database
 class project {
 	public static void main(String[] args) {
 		try {
