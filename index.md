@@ -1,5 +1,5 @@
-# Testing 
-## mySQL Project
+# Programming Projects 
+## mySQL Project (HU310)
 
 '''java
 import java.sql.Connection;
