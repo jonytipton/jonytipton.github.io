@@ -3,23 +3,15 @@
 
 ```java
 import java.sql.Connection;
-
 import java.sql.DriverManager;
-
 import java.sql.SQLException;
-
 import java.sql.Statement;
-
 import java.sql.PreparedStatement;
-
 import java.sql.ResultSet;
 
 // don't forget to set up your classpath.
-
 //export CLASSPATH=/opt/mysql/mysql-connector-java-5.1.45-bin.jar:$CLASSPATH
-
 // don't forget that you need Procedures in your database
-
 
 private class project {
 	public static void main(String[] args) {
