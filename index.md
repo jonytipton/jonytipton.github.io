@@ -1,7 +1,7 @@
 # Programming Projects 
 ## mySQL Project (HU310)
 
-'''java
+```
 import java.sql.Connection;
 
 import java.sql.DriverManager;
@@ -223,3 +223,4 @@ private class project {
 		}
 	}
 }
+```
