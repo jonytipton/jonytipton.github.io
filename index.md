@@ -1,2 +1,2 @@
-# Programming Projects 
-## mySQL Project (HU310)
+# Jonathan Tipton
+## Portfolio
