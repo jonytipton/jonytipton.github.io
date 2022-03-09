@@ -235,6 +235,21 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	/* Flex method */
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.flex-child {
+		flex: 1;
+		min-width: 300px;
+	}  
+	
+	.flex-child:first-child {
+		margin-right: 20px;
+	} 
+
 /* Loader */
 
 	@-moz-keyframes spinner-show {
@@ -4108,5 +4123,7 @@ input, select, textarea {
 						margin: 0;
 						padding: 0;
 					}
+		
+		
 
 	}
