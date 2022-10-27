@@ -3389,7 +3389,6 @@ input, select, textarea {
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
@@ -3445,7 +3444,7 @@ input, select, textarea {
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #e44c65;
+						color: #0095ff;
 					}
 
 					#header nav ul li > ul {
@@ -3457,17 +3456,16 @@ input, select, textarea {
 	}
 
 	body.landing #header {
-		background: transparent;
 		box-shadow: none;
-		position: absolute;
+		position: fixed;
+		background: #181920;
 	}
 
 /* Banner */
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/home_background.mp4");
+		background-color: #0095ff;
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3762,6 +3760,8 @@ input, select, textarea {
 
 	#navPanel, #titleBar {
 		display: none;
+		background: #181920;
+
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3902,7 +3902,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #272833;
+				background: #181920;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -3946,7 +3946,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
+						background: darkcyan;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;

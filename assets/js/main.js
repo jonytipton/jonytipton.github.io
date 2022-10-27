@@ -22,7 +22,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 10);
 		});
 
 	// Touch mode.
@@ -149,7 +149,7 @@
 					var top, bottom, mode;
 
 					// Use main <img>'s src as this spotlight's background.
-						$this.css('background-image', 'url("' + $this.find('.image.main > img').attr('src') + '")');
+						$this.css('background-image', 'url("' + $this.find('.image.main > source').attr('src') + '")');
 
 					// Side-specific scrollex tweaks.
 						if ($this.hasClass('top')) {
