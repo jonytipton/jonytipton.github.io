@@ -3073,7 +3073,6 @@ input, select, textarea {
 
 		.spotlight:before {
 			background-image: url("images/overlay.png");
-			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
@@ -3872,6 +3871,10 @@ input, select, textarea {
 					}
 
 		/* Nav */
+			#nav {
+				background-image: url("images/overlay.png");
+
+			}
 
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
