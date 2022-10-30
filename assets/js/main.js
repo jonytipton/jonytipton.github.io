@@ -9,6 +9,7 @@
 	var	$window = $(window),
 		$body = $('body');
 
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -22,7 +23,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 10);
+			}, 2000);
 		});
 
 	// Touch mode.
@@ -136,7 +137,6 @@
 
 	// Spotlights.
 		var $spotlights = $('.spotlight');
-
 		$spotlights
 			._parallax()
 			.each(function() {
@@ -146,11 +146,21 @@
 
 				on = function() {
 
-					var top, bottom, mode;
+					var top, bottom, mode, video;
+
+					//video
+					if ($this.hasClass('one')) {
+						video = document.getElementById('movie2');
+					}
+					else if ($this.hasClass('two')) {
+						video = document.getElementById('movie3');
+					}
+					else if ($this.hasClass('three')) {
+						video = document.getElementById('movie4');
+					}
 
 					// Use main <img>'s src as this spotlight's background.
-						$this.css('background-image', 'url("' + $this.find('.image.main > source').attr('src') + '")');
-
+						//$this.css('background-image', 'url("' + $this.find('.image.main > source').attr('src') + '")');
 					// Side-specific scrollex tweaks.
 						if ($this.hasClass('top')) {
 
@@ -173,7 +183,6 @@
 							bottom = 0;
 
 						}
-
 					// Add scrollex.
 						$this.scrollex({
 							mode:		mode,
@@ -181,11 +190,16 @@
 							bottom:		bottom,
 							initialize:	function(t) { $this.addClass('inactive'); },
 							terminate:	function(t) { $this.removeClass('inactive'); },
-							enter:		function(t) { $this.removeClass('inactive'); },
+							enter:		function(t) { $this.removeClass('inactive'); 
+							video.play();
+							},
 
 							// Uncomment the line below to "rewind" when this spotlight scrolls out of view.
 
-							//leave:	function(t) { $this.addClass('inactive'); },
+							leave:	function(t) { $this.addClass('inactive'); 
+							video.pause();
+							video.currentTime=0;
+							},
 
 						});
 
@@ -194,7 +208,7 @@
 				off = function() {
 
 					// Clear spotlight's background.
-						$this.css('background-image', '');
+						//$this.css('background-image', '');
 
 					// Remove scrollex.
 						$this.unscrollex();
@@ -222,12 +236,11 @@
 						bottom:		0,
 						initialize:	function(t) { $this.addClass('inactive'); },
 						terminate:	function(t) { $this.removeClass('inactive'); },
-						enter:		function(t) { $this.removeClass('inactive'); },
+						enter:		function(t) { $this.removeClass('inactive'); 
+					},
 
 						// Uncomment the line below to "rewind" when this wrapper scrolls out of view.
-
-						//leave:	function(t) { $this.addClass('inactive'); },
-
+						leave:	function(t) { $this.addClass('inactive'); }
 					});
 
 				};

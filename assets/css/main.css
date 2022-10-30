@@ -2549,6 +2549,14 @@ input, select, textarea {
 			display: block;
 		}
 
+		.image video {
+			position: absolute;
+			display: inline-block;
+			left:0;
+			height: auto;
+			object-fit: cover;
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 1.5em 1em 0;
@@ -2571,8 +2579,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
 			width: 100%;
+			margin: 0 0 1em 0;
 		}
 
 			.image.fit img {
@@ -2870,8 +2878,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			box-shadow: inset 0 0 0 1px darkcyan;
+			color: darkcyan !important;
 		}
 
 		input[type="submit"]:active,
@@ -3137,9 +3145,9 @@ input, select, textarea {
 
 		.spotlight.left .content, .spotlight.right .content {
 			height: 101%;
-			padding: 6em 3em;
+			padding: 5em 1em;
 			top: 0;
-			width: 28em;
+			width: 30em;
 		}
 
 		.spotlight.left .content {
@@ -3463,8 +3471,9 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
+		overflow: hidden;
+		
 		background-attachment: fixed;
-		background-color: #0095ff;
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3472,6 +3481,7 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		z-index: 21;
+		opacity: 1;
 	}
 
 		#banner:before {
@@ -3494,6 +3504,15 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
+			background-color: #0095ff;
+			opacity: 75%;
+		}
+
+		#banner .video {
+			position: absolute;
+			display: inline-block;
+			left:0;
+			height: auto;
 		}
 
 		#banner .content {
@@ -3612,58 +3631,11 @@ input, select, textarea {
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
-
-		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 11.5pt;
-			}
-
-		/* Spotlight */
-
-			.spotlight.top .content {
-				padding: 3.825em 0 1.825em 0;
-			}
-
-			.spotlight.bottom .content {
-				padding: 3.825em 0 2.95em 0;
-			}
-
-			.spotlight.left .content, .spotlight.right .content {
-				padding: 4.5em 2.5em;
-				width: 25em;
-			}
-
-		/* Wrapper */
-
-			.wrapper {
-				padding: 4.5em 0 2.5em 0;
-			}
-
-		/* Dropotron */
-
-			.dropotron.level-0 {
-				font-size: 1em;
-			}
-
-		/* Banner */
-
-			#banner .content {
-				padding: 4.5em;
-			}
-
-		/* Footer */
-
-			#footer {
-				padding: 4.5em 0;
-			}
-
-	}
+	
 
 /* Medium */
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 1300px) {
 
 		/* Basic */
 

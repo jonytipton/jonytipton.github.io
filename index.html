@@ -24,6 +24,7 @@
 
 			<!-- Banner -->
 				<section id="banner">
+					<video playsInline autoplay muted id="bannerVid" class="video" src="images/home_background.mp4" type="video/mp4"></video>
 					<div class="content">
 						<header>
 							<h2>Hello, call me Jony!</h2>
@@ -41,13 +42,14 @@
 							</ul>
 						</header>
 						<span class="image"><img src="images/home_avatar.JPG" alt="" /></span>
+
 					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
+					<a href="#two" id="playVid" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<video controls muted loop id="movie" class="image fit" src="images/TrimmedVrClip.mp4" type="video/mp4"></video>
+				<section id="two" class="one spotlight style1 right">
+					<video playsInline controls muted loop id="movie2" class="image fit" src="images/TrimmedVrClip.mp4" type="video/mp4"></video>
 					<div class="content">
 						<header>
 							<h2>Unity VR Game</h2>
@@ -61,7 +63,7 @@
 							UI/UX testing was conducted throughout the development process and user feedback informed prioritization of planned gameplay and graphics improvements.
 						</p>
 						<p>
-							All graphics and gameplay code were created by myself. This required independently learning 3D modeling/texturing/animation in AutoDesk Maya and XR packages by Oculus + Unity. 
+							All graphics and gameplay code were created by myself. This required independently learning 3D modeling, texturing, and animation in AutoDesk Maya and XR packages by Oculus + Unity. 
 						</p>
 						<ul class="actions">
 							<li><a href="https://github.com/jonytipton/EscapeTheGridVR" class="button">View Repo</a></li>
@@ -71,8 +73,8 @@
 				</section>
 
 			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<video controls muted loop id="movie" class="image fit" src="images/Theia_Demo.mp4" type="video/mp4"></video>
+				<section id="three" class="two spotlight style1 left">
+					<video playsInline controls muted loop id="movie3" class="image fit" src="images/Theia_Demo.mp4" type="video/mp4"></video>
 					<div class="content">
 						<header>
 							<h2>Audio Wayfinding App</h2>
@@ -92,8 +94,8 @@
 				</section>
 
 				<!-- Foure -->
-				<section id="four" class="spotlight style2 right">
-					<video controls preload="auto" muted loop class="image fit" src="images/EMA.mp4" type="video/mp4"></video>
+				<section id="four" class="three spotlight style1 right">
+					<video playsInline controls muted loop id="movie4" class="image fit" src="images/EMA.mp4" type="video/mp4"></video>
 					<div class="content">
 						<header>
 							<h2>Cross-Platform App</h2>
