@@ -3510,9 +3510,11 @@ input, select, textarea {
 
 		#banner .video {
 			position: absolute;
-			display: inline-block;
+			right:0;
 			left:0;
-			height: auto;
+			margin: 0;
+			padding: 0;
+			height: 120%;
 		}
 
 		#banner .content {
